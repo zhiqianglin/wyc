@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="798.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.POIReportController">
+   <children>
+      <Label layoutX="350.0" layoutY="44.0" text="POI Report">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button layoutX="382.0" layoutY="332.0" mnemonicParsing="false" onAction="#back" text="Back" />
+      <TableView fx:id="reportTable" layoutX="14.0" layoutY="92.0" prefHeight="200.0" prefWidth="761.0">
+        <columns>
+          <TableColumn fx:id="locationNameCol" prefWidth="97.0" text="POI Location" />
+          <TableColumn fx:id="cityCol" prefWidth="53.0" text="City" />
+            <TableColumn fx:id="stateCol" prefWidth="42.0" text="State" />
+            <TableColumn fx:id="moldMinCol" prefWidth="71.0" text="Mold Min" />
+            <TableColumn fx:id="moldAvgCol" prefWidth="72.0" text="Mold Avg" />
+            <TableColumn fx:id="moldMaxCol" prefWidth="73.0" text="Mold Max" />
+            <TableColumn fx:id="aqMinCol" prefWidth="59.0" text="AQ Min" />
+            <TableColumn fx:id="aqAvgCol" prefWidth="61.0" text="AQ Avg" />
+            <TableColumn fx:id="aqMaxCol" prefWidth="62.0" text="AQ Max" />
+            <TableColumn fx:id="numDataPointCol" prefWidth="101.0" text="#of data points" />
+            <TableColumn fx:id="flaggedCol" prefWidth="69.0" text="Flagged?" />
+        </columns>
+      </TableView>
+   </children>
+</Pane>

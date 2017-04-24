@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="497.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="229.0" layoutY="57.0" text="POI Detail">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Separator layoutX="13.0" layoutY="42.0" prefHeight="5.0" prefWidth="576.0" />
+      <Label layoutX="66.0" layoutY="111.0" text="Type" />
+      <ChoiceBox fx:id="dataType" layoutX="186.0" layoutY="106.0" prefHeight="27.0" prefWidth="107.0" />
+      <Label layoutX="65.0" layoutY="152.0" text="Data Value" />
+      <TextField fx:id="dataValueMin" layoutX="169.0" layoutY="147.0" prefHeight="27.0" prefWidth="66.0" />
+      <Label layoutX="266.0" layoutY="152.0" text="to" />
+      <TextField fx:id="dataValueMax" layoutX="293.0" layoutY="147.0" prefHeight="27.0" prefWidth="66.0" />
+      <Label layoutX="65.0" layoutY="194.0" text="Time&amp;Date" />
+      <DatePicker fx:id="dateMin" layoutX="157.0" layoutY="189.0" prefHeight="27.0" prefWidth="93.0" />
+      <Label layoutX="272.0" layoutY="194.0" text="to" />
+      <DatePicker fx:id="dateMax" layoutX="301.0" layoutY="189.0" prefHeight="27.0" prefWidth="93.0" />
+      <Button layoutX="350.0" layoutY="229.0" mnemonicParsing="false" onAction="#applyFilter" text="Apply Filter" />
+      <Button layoutX="477.0" layoutY="229.0" mnemonicParsing="false" onAction="#resetFilter" text="Reset Filter" />
+      <Separator layoutX="35.0" layoutY="264.0" prefHeight="17.0" prefWidth="532.0" />
+      <Button layoutX="107.0" layoutY="437.0" mnemonicParsing="false" onAction="#back" text="Back" />
+      <Button layoutX="409.0" layoutY="437.0" mnemonicParsing="false" onAction="#flag" text="Flag" />
+      <TableView fx:id="dataTable" layoutX="107.0" layoutY="288.0" prefHeight="138.0" prefWidth="405.0">
+        <columns>
+          <TableColumn fx:id="dataTypeCol" prefWidth="89.0" text="Data type" />
+          <TableColumn fx:id="dataValueCol" prefWidth="110.0" text="Date value" />
+            <TableColumn fx:id="dateTimeCol" prefWidth="205.0" text="Time &amp; date of data recoding" />
+        </columns>
+      </TableView>
+   </children>
+</Pane>

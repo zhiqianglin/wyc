@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginController">
+   <children>
+      <Label layoutX="251.0" layoutY="45.0" text="Login">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="75.0" layoutY="130.0" text="Username">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="77.0" layoutY="174.0" text="Password">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="username" layoutX="237.0" layoutY="129.0" prefHeight="27.0" prefWidth="277.0" promptText="jon.snow@gatech.edu" />
+      <Button layoutX="169.0" layoutY="263.0" mnemonicParsing="false" onAction="#login" prefHeight="27.0" prefWidth="69.0" text="Login" />
+      <Button layoutX="328.0" layoutY="263.0" mnemonicParsing="false" onAction="#register" text="Register" />
+      <PasswordField fx:id="password" layoutX="237.0" layoutY="174.0" prefHeight="27.0" prefWidth="277.0" />
+   </children>
+</Pane>

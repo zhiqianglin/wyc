@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AddDataPointController">
+   <children>
+      <Label layoutX="99.0" layoutY="54.0" text="Add a new data point">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Label>
+      <Label layoutX="99.0" layoutY="131.0" text="POI location name:" />
+      <Button layoutX="420.0" layoutY="126.0" mnemonicParsing="false" onAction="#addNewLocation" text="Add a new location" />
+      <Label layoutX="25.0" layoutY="187.0" text="Time and date of data reading:" />
+      <Label layoutX="149.0" layoutY="226.0" text="Data type:" />
+      <Label layoutX="149.0" layoutY="272.0" text="Data value:" />
+      <Button layoutX="218.0" layoutY="321.0" mnemonicParsing="false" onAction="#back" prefHeight="27.0" prefWidth="61.0" text="Back" />
+      <Button fx:id="submit" layoutX="408.0" layoutY="321.0" mnemonicParsing="false" onAction="#submit" text="Submit" />
+      <TextField fx:id="dataValue" layoutX="225.0" layoutY="267.0" prefHeight="27.0" prefWidth="286.0" />
+      <ChoiceBox fx:id="locationName" layoutX="225.0" layoutY="126.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="dataType" layoutX="225.0" layoutY="221.0" prefWidth="150.0" />
+      <DatePicker fx:id="date" layoutX="225.0" layoutY="182.0" prefHeight="27.0" prefWidth="176.0" />
+      <JFXTimePicker fx:id="time" defaultColor="#464542" layoutX="440.0" layoutY="181.0" prefHeight="29.0" prefWidth="100.0" />
+
+
+
+   </children>
+</Pane>

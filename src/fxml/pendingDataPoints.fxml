@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PendingDataPoints">
+   <children>
+      <Label layoutX="212.0" layoutY="65.0" text="Pending Data Points" />
+      <TableView fx:id="table" layoutX="20.0" layoutY="100.0" prefHeight="200.0" prefWidth="550.0">
+        <columns>
+          <TableColumn fx:id="selected" prefWidth="75.0" text="Select" />
+          <TableColumn fx:id="locationName" prefWidth="100.0" text="POI Location" />
+            <TableColumn fx:id="dataType" prefWidth="75.0" text="Data Type" />
+            <TableColumn fx:id="dataValue" prefWidth="129.0" text="Data Value" />
+            <TableColumn fx:id="dateTime" prefWidth="170.0" text="Time&amp;date of data " />
+        </columns>
+      </TableView>
+      <Button layoutX="445.0" layoutY="327.0" mnemonicParsing="false" onAction="#accept" text="Accept" />
+      <Button layoutX="307.0" layoutY="327.0" mnemonicParsing="false" onAction="#reject" text="Reject" />
+      <Button layoutX="101.0" layoutY="327.0" mnemonicParsing="false" onAction="#back" text="Back" />
+   </children>
+</Pane>

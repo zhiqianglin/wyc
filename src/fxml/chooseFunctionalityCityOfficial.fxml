@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ChooseFunctionalityCityOfficial">
+   <children>
+      <Label layoutX="186.0" layoutY="69.0" text="Choose Functionality">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Button layoutX="208.0" layoutY="140.0" mnemonicParsing="false" onAction="#searchPOI" prefHeight="35.0" prefWidth="180.0" text="Filter/Search POI" />
+      <Button layoutX="208.0" layoutY="218.0" mnemonicParsing="false" onAction="#viewPOIReport" prefHeight="35.0" prefWidth="180.0" text="POI Report" />
+      <Button layoutX="469.0" layoutY="324.0" mnemonicParsing="false" onAction="#logOut" prefHeight="35.0" prefWidth="83.0" text="Log out" />
+   </children>
+</Pane>

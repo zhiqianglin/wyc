@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AddLocationController">
+   <children>
+      <Button layoutX="191.0" layoutY="328.0" mnemonicParsing="false" onAction="#back" text="Back" />
+      <Button layoutX="342.0" layoutY="328.0" mnemonicParsing="false" onAction="#submit" text="Submit" />
+      <TextField fx:id="locationName" layoutX="237.0" layoutY="113.0" />
+      <Label layoutX="75.0" layoutY="110.0" prefHeight="34.0" prefWidth="140.0" text="POI Location Name" />
+      <Label layoutX="170.0" layoutY="164.0" text="City" />
+      <Label layoutX="165.0" layoutY="200.0" text="State" />
+      <Label layoutX="154.0" layoutY="246.0" text="Zip Code" />
+      <ChoiceBox fx:id="city" layoutX="237.0" layoutY="159.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="state" layoutX="237.0" layoutY="195.0" prefWidth="150.0" />
+      <TextField fx:id="zipCode" layoutX="237.0" layoutY="241.0" />
+      <Label layoutX="181.0" layoutY="43.0" text="Add a New POI Location">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
